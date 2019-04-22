@@ -1,0 +1,65 @@
+.food-menu {
+	
+
+	&__title {
+		font-size: 36px;
+		font-weight: 600;
+		position: relative;
+		margin-top: 50px;
+		margin-bottom: 80px;
+		&:after {
+			content: '';
+			position: absolute;
+			height:10px;
+			background: $green;
+			bottom: -10px;
+			width:80%;
+			left:-750px;
+		}
+	}
+	&__list {
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		
+	}
+	&__item {
+		display: flex;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-align-items: center;
+		        align-items: center;
+		margin-right: 70px;
+		
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	&__name {
+		margin-top: 50px;
+		font-size: 18px;
+		font-weight: 700;
+		-webkit-align-self: flex-start;
+		        align-self: flex-start;
+		margin-bottom: 30px;
+	}
+	&__desc {
+		font-size: 18px;
+		margin-bottom: 100px;
+		line-height: 24px;
+		
+	}
+}
+
+.food-menu .icon {
+	height: 100%;
+	max-height: 100px;
+	width: 100%;
+	max-width: 100px;
+	vertical-align: middle;
+	-webkit-align-self: flex-start;
+	        align-self: flex-start;
+	
+	
+}

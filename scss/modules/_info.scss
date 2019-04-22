@@ -1,0 +1,55 @@
+.info {
+	&__title {
+		font-size: 36px;
+		font-weight: 600;
+		margin-top: 65px;
+		margin-bottom: 55px;
+		position: relative;
+
+		&:after {
+			content: '';
+			position: absolute;
+			height:10px;
+			background: $green;
+			bottom: -8px;
+			width:80%;
+			left:-750px;
+			z-index: -1;
+			
+		}
+	}
+	&__row {
+		margin-bottom: 40px;
+		margin-left: 0px;
+		margin-right: 0;
+		
+		
+	}
+
+	&__item {
+		display: flex;
+		margin: 0;
+		padding: 0;
+	
+	}
+	&__text {
+		margin-left: 60px;
+		padding-right: 30px;
+
+		font-size: 18px;
+	}
+}
+
+
+
+
+
+
+.icon {
+	height: 100%;
+	max-height: 42px;
+	width: 100%;
+	max-width: 42px;
+	
+	
+}
