@@ -1,0 +1,115 @@
+.header {
+
+	//min-height: 100vh;
+	height: 100%;
+	width: 100%;
+	background: url('../images/bg.jpg') no-repeat center;
+    background-size: cover;
+
+    
+	
+	&__info {
+		font-size: 62px;
+		font-weight: 700;
+		color: #555252;
+		text-transform: capitalize;
+		margin-bottom: 40px;
+		
+		
+		&--white {
+			color: #FFF;
+		}
+	}
+	
+	&__date {
+		font-size: 36px;
+		color: #4F4F4F;
+		font-weight: 600;
+		position: relative;
+
+		margin-bottom: 100px;
+		
+		&:after {
+			content: '';
+			position: absolute;
+			height:20px;
+			background: $green;
+			bottom: -30px;
+			width:80%;
+			left:-750px;
+		}
+	}
+
+	&__title {
+		font-size: 120px;
+		font-family: $permanent;
+		color: $graffite;
+		opacity: .35;
+		
+		&--bottom {
+			padding-left: 120px;
+		}
+	}
+
+	&__adress-link {
+		
+	}
+
+	&__socialize {
+		margin-top: 150px;
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+	}
+	&__soc-link {
+		-webkit-align-self: flex-end;
+		        align-self: flex-end;
+	    font-size: 50px;
+	    
+	}
+}
+
+.menu {
+	text-transform: uppercase;
+	display: flex;
+	width: 100%;
+	
+	&__nav {
+		display: flex;
+		margin-top: 60px;
+		width: 100%;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		margin-left: 10%;
+		
+		
+
+	}
+	&__list {
+		//margin-left: 20px;
+		
+		
+	}
+	&__item {
+		font-size: 18px;
+		font-weight: 700;
+		color: #FFF;
+		
+		&--black {
+			color: $black;
+		}
+	}
+
+	
+}
+
+.logo {
+	margin-top: 35px;
+	margin-bottom: 10px;
+	//margin-right: 50px;
+}
+
+
+[class^=icon] {
+	color: $green;
+}
