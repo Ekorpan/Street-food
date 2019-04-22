@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700|Permanent+Marker');
 
 
-@include font-face('icomoon', 'fonts/icomoon/icomoon', $ver: '?leue32');
+@include font-face('icomoon', 'Fonts/icomoon/icomoon', $ver: '?leue32');
 
 
 
@@ -34,32 +34,35 @@
 
 //SVG Icons
 /*<svg class="icon">
+  <use xlink:href="#band_pic"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#burger 2.7"></use>
+</svg>
+<svg class="icon">
   <use xlink:href="#cocktail"></use>
 </svg>
 <svg class="icon">
   <use xlink:href="#cupcake"></use>
 </svg>
 <svg class="icon">
+  <use xlink:href="#dish_pic"></use>
+</svg>
+<svg class="icon">
   <use xlink:href="#dumpling"></use>
-</svg>
-<svg class="icon">
-  <use xlink:href="#worldwide"></use>
-</svg>
-<svg class="icon">
-  <use xlink:href="#burger 2.7"></use>
-</svg>
-<svg class="icon">
-  <use xlink:href="#market_pic"></use>
-</svg>
-<svg class="icon">
-  <use xlink:href="#wheelchair"></use>
 </svg>
 <svg class="icon">
   <use xlink:href="#Group"></use>
 </svg>
 <svg class="icon">
-  <use xlink:href="#band_pic"></use>
+  <use xlink:href="#market_pic"></use>
 </svg>
 <svg class="icon">
-  <use xlink:href="#dish_pic"></use>
+  <use xlink:href="#teddy-bear"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#wheelchair"></use>
+</svg>
+<svg class="icon">
+  <use xlink:href="#worldwide"></use>
 </svg>*/
