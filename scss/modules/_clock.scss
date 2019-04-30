@@ -1,0 +1,99 @@
+.counter {
+	border-top: 3px solid $green;
+	border-bottom: 8px solid $green;
+	width: 100%;
+	text-align: center;
+}
+
+.clock {
+	color: #000;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	font-weight: 700;
+	margin: 0 auto;
+	text-align: center;
+	
+	&__link {
+		margin-bottom: 50px;
+	}
+}
+
+.clock > div{
+	padding: 30px 20px 20px;
+	border-radius: 3px;
+	background: #fff;
+	display: inline-block;
+	border: 2px solid $green;
+	font-size: 65px;
+	margin-bottom: 60px;
+	margin-right: 95px;
+	
+	&:last-child {
+		margin-right: 0;
+	}
+}
+
+.clock div > span{
+
+	margin: 15px;
+	border-radius: 3px;
+	background: #fff;
+	display: inline-block;
+}
+
+.smalltext{
+	padding-top: 5px;
+	font-size: 24px;
+}
+
+.сlock-title {
+	font-size: 35px;
+	font-weight: 600;
+	padding-top: 50px;
+	margin-bottom: 65px;
+	text-align: center;
+	
+}
+
+.btn-2 {
+	background: #cb4e4e;
+	color: #fff;
+	box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+	
+
+}
+
+
+.btn {
+	font-size: 24px;
+	color: #000;
+	background: $green;
+	cursor: pointer;
+	padding: 20px 25px;
+	letter-spacing: 1px;
+	font-weight: 700;
+	position: relative;
+	
+}
+
+.btn:after {
+	content: '';
+	position: absolute;
+	z-index: -1;
+}
+/* Button 2a */
+.btn-2a {
+	border-radius: 0 0 5px 5px;
+	transition: ease-out .1s;
+}
+
+.btn-2a:hover {
+	box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+	top: 2px;
+}
+
+.btn-2a:active {
+	box-shadow: 0 0 #000;
+	top: 6px;
+}

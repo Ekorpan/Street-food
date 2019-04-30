@@ -146,11 +146,11 @@
 			<div class="menu">
 				<a href="#" class="logo"><img src="images/logo.png"></a>
 				<ul class="menu__nav">
-					<li class="menu__list"><a href="#" class="menu__item menu__item--black">О фестивале</a></li>
-					<li class="menu__list"><a href="#" class="menu__item">Что в меню?</a></li>
-					<li class="menu__list"><a href="#" class="menu__item">Локация</a></li>
-					<li class="menu__list"><a href="#" class="menu__item">Галерея</a></li>
-					<li class="menu__list"><a href="#" class="menu__item">Контакты</a></li>
+					<li class="menu__list"><a href="#info" class="menu__item menu__item--black">О фестивале</a></li>
+					<li class="menu__list"><a href="#food-menu" class="menu__item">Что в меню?</a></li>
+					<li class="menu__list"><a href="#location" class="menu__item">Локация</a></li>
+					<li class="menu__list"><a href="#gallery" class="menu__item">Галерея</a></li>
+					<li class="menu__list"><a href="#contact" class="menu__item">Контакты</a></li>
 				</ul>
 			</div>
 			<h2 class="header__info">Фестиваль у<span class="header__info header__info--white">личной еды</span></h2>
@@ -169,8 +169,34 @@
 			</div>
 		</div>
 	</header>
-	<div class="clock"></div>
-	<div class="info">
+
+	<div class="counter">
+		<div class="wrapper">
+			<h2 class="сlock-title">До начала фестиваля уличной еды StreetFood осталось</h2>
+			<div id="clock" class="clock">
+				<div>
+					<span class="days"></span>
+					<div class="smalltext">дней</div>
+				</div>
+				<div>
+					<span class="hours"></span>
+					<div class="smalltext">часов</div>
+				</div>
+				<div>
+					<span class="minutes"></span>
+					<div class="smalltext">минут</div>
+				</div>
+				<div>
+					<span class="seconds"></span>
+					<div class="smalltext">секунд</div>
+				</div>
+			</div>
+			<div class="clock__link">
+			<a href="https://widget.kontramarka.ua/ru/widget216site11129/widget/show/5516" class="btn btn-2 btn-2a">Хочу билет</a>
+			</div>
+		</div>
+	</div>
+	<div class="info" id="info">
 		<div class="wrapper">
 			<h2 class="info__title">О фестивале</h2>
 			<div class="row info__row">
@@ -262,7 +288,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="food-menu">
+	<div class="food-menu" id="food-menu">
 		<div class="wrapper">
 			<h2 class="food-menu__title">Что в меню?</h2>
 			<div class="food-menu__list">
@@ -297,12 +323,93 @@
 			</div>
 		</div>
 	</div>
+	<div class="location" id="location">
+		<div class="wrapper">
+			<h2 class="location__title">Локация</h2>
+			<div class="row">
+				<div class="col-6">
+					<p class="location__name">Место проведения фестиваля уличной еды StreetFood - Арт-завод Платформа.</p>
+					<p class="location__desc">Благодаря нашему фестивалю бывший заброшенный Дарницкий шелковый завод превратился в крупнейший креативный кластер страны.</p>
+				</div>
+				<div class="col-6">
+					<div id="map" class="location__map"></div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-6">
+					<p class="location__name location__name--photo">Карта-схема площадки фестиваля уличной еды StreetFood</p>
+					<p class="location__desc"> <span>Адрес:</span><br> ул. Беломорская, 1а<br>(Арт-завод Платформа) <br>м. Черниговская/м. Лесная</p>
+				</div>
+				<div class="col-6">
+					<img src="images/location-photo.jpg" alt="Схема локации" class="location__photo">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="gallery" id="gallery">
+		<div class="wrapper">
+			<h2 class="gallery__title">Галерея</h2>
+			<div class="gallery__container">
+				<div class="gallery__item">
+					<img src="images/shashlik_pic.jpg" alt="Shashlik" class="gallery__photos">
+					<img src="images/girl_pic.jpg" alt="girl" class="gallery__photos">
+				</div>
+				<div class="gallery__item">
+					<img src="images/relax_pic.jpg" alt="relax" class="gallery__photos">
+					<img src="images/krevetki_pic.jpg" alt="krevetki" class="gallery__photos">
+				</div>
+				<div class="gallery__item">
+					<img src="images/shrimp_kebab_pic.jpg" alt="kebab" class="gallery__photos">
+					<img src="images/burger_pic.jpg" alt="burger" class="gallery__photos">
+				</div>
+			</div>
+			<div class="gallery__desc">
+				<a href="https://www.instagram.com/ulichnayaeda/?hl=uk" class="gallery__link">Смотри больше фото в </a>
+				<a href="https://www.instagram.com/ulichnayaeda/?hl=uk" class="icon-instagram"></a>
+			</div>
+		</div>
+	</div>
+
+	<div class="contact" id="contact">
+		<div class="wrapper">
+			<h2 class="contact__title">Контакты</h2>
+			<div class="contact__desc">
+				<p class="contact__adress">Ул.Беломорская</p>
+				<a href="tel:+380443885538" class="contact__phone">+38 (044) 3885538</a>
+			</div>
+			<div class="row">
+				<div class="col-2"><p class="contact__questions">По вопросам — <a href="info@ulichnayaeda.com.ua">info@ulichnayaeda.com.ua</a></p></div>
+				<div class="col-3 offset-3"><p class="contact__join">Участие в фуд-корте — <a href="k.kovalenko@ulichnayaeda.com.ua">k.kovalenko@ulichnayaeda.com.ua</a></p></div>
+			</div>
+			<div class="contact__email">
+				<div>
+					<p class="contact__email-text">Подпишись на рассылку, чтобы быть в курсе о всех предстоящих фестивалях уличной еды </p>
+					<form class="contact__form">
+						<input type="email" id="email" name="email" placeholder="Email" class="contact__input" required=""><span id="valid"></span>
+						<input type="submit" name="join" value="Подписатся" class="contact__button">
+					</form>
+					<div class="contact__error error">
+						<p>Неправльно указан email</p>
+					</div>
+				</div>
+				<a href="#" class="contact__logo"><img src="images/logo.png" alt="logo"></a>
+			</div>
+
+		</div>
+	</div>
+	<footer class="footer">
+		<p class="footer__text">2013-2019 <a href="StreetFood.com.ua." class="footer__link">StreetFood.com.ua.</a> All rights reserved.</p>
+	</footer>
 
 	<!-- Scripts -->
 	<script src="js/libs/jquery-3.4.0.min.js"></script>
-	<script src="js/main.js"></script>
+	<script async defer
+	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-APZUYsZ8n1DhyE4Y5YgMJlTTg0ek9ng&callback=initMap">
+</script>
+<script src="js/main.js"></script>
 
-	<!-- LiveReload Script -->
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+<!-- LiveReload Script -->
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>

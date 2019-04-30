@@ -1,0 +1,71 @@
+.gallery {
+	
+	&__container {
+		display: flex;
+		-webkit-justify-content: space-between;
+		        justify-content: space-between;
+		position: relative;
+	}
+	&__photos {
+
+		width: 100%;
+		margin-bottom: 15px;
+		cursor: pointer;
+		
+		
+		&:active {
+			transform: scale(1.5);
+			transition: all .4s;
+			//position: absolute;
+		}
+	}
+
+	&__item {
+		padding-right: 15px;
+		text-align: center;
+		
+		&:last-child {
+			padding-right: 0;
+		}
+	}
+
+	&__title {
+		font-size: 36px;
+		font-weight: 600;
+		position: relative;
+		margin-top: 50px;
+		margin-bottom: 80px;
+		&:after {
+			content: '';
+			position: absolute;
+			height:10px;
+			background: $green;
+			bottom: -10px;
+			width:80%;
+			left:-750px;
+		}
+	}
+
+	&__desc {
+		text-align: right;
+		font-size: 18px;
+		font-weight: 700;
+		position: relative;
+		margin-top: 30px;
+		margin-bottom: 50px;
+		&:after {
+			content: '';
+			position: absolute;
+			height:10px;
+			background: $gray;
+			bottom: -20px;
+			width:60%;
+			right:-283px;
+			
+		}
+	}
+	& .icon-instagram {
+		color: #000;
+		font-size: 30px;
+	}
+}

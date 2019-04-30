@@ -95,13 +95,32 @@
 		font-size: 18px;
 		font-weight: 700;
 		color: #FFF;
+		line-height: 1;
+		text-decoration: none;
 		
+		
+		&:hover:after, :focus:after {
+			width: 100%;
+		}
+		&::after {
+			background-color: #FFF;
+			display: block;
+			content: "";
+			height: 3px;
+			width: 0%;
+			-webkit-transition: width .3s ease-in-out;
+			-moz--transition: width .3s ease-in-out;
+			transition: width .3s ease-in-out;
+		}
 		&--black {
 			color: $black;
+		
+			&::after {
+				background-color: #000;
+			}
 		}
-		&:hover {
-			text-decoration: underline;
-		}
+
+		
 	}
 
 	
@@ -116,4 +135,8 @@
 
 [class^=icon] {
 	color: $green;
+	
+	&:hover {
+		font-size: 70px;
+	}
 }
